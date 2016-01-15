@@ -381,19 +381,36 @@
             <p>I'd love to hear about your next project! Send me a message and I will see if I can help.</p>
 
             <form class='form' action="contact">
-                <label for="name">name</label>
-                <input type="text">
 
-                <label for="email">email address</label>
-                <input type="text">
+                <span class="input-group">
+                    <input class="input-field" type="text" />
+                    <label class="float-label" for="input">
+                        <span class="label-content">Name</span>
+                    </label>
+                </span>
 
-                <label for="number">phone number</label>
-                <input type="text">
+                <span class="input-group">
+                    <input class="input-field" type="text" />
+                    <label class="float-label" for="email address">
+                        <span class="label-content">Email Address</span>
+                    </label>
+                </span>
 
-                <label for="message">message</label>
-                <input type="text">
+                <span class="input-group">
+                    <input class="input-field" type="text" />
+                    <label class="float-label" for="phone number">
+                        <span class="label-content">Phone Number</span>
+                    </label>
+                </span>
 
-                <button class="send" value="send"></button>
+                <span class="input-group">
+                    <input class="input-field" type="textarea" />
+                    <label class="float-label" for="message">
+                        <span class="label-content">Message</span>
+                    </label>
+                </span>
+                
+                <button class="send" value="send">Send</button>
             </form>
         </section>
 

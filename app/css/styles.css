@@ -458,7 +458,32 @@ CONTACT SECTION STYLING
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .contact input,
-  .form input {
+
+form {
+  width: 60%;
+  padding: 60px 0; }
+  form .input-group {
+    position: relative;
+    width: 100%; }
+  form input {
+    width: 100%;
+    background: transparent;
+    color: #AFB5BB;
+    font-size: 1.55em;
+    height: 60px;
     border: none;
-    border-top: 1px solid #333333; }
+    border-top: 1px solid lightgray; }
+    form input:nth-of-type(4) {
+      border-bottom: 1px solid lightgray; }
+  form label {
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    pointer-events: none; }
+  form .label-content {
+    transition: transform 0.3s; }
+  form button {
+    padding: 15px 20px;
+    border: 1px solid #333333;
+    color: #333333;
+    align-self: flex-start; }
