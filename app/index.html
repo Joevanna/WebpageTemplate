@@ -312,12 +312,18 @@
         </section>
 
         <section class="review">
-            <div class="arrows">
-                <a href="" class="prev"></a>
-                <a href="" class="next"></a>
-            </div>
+            
 
             <div class="carousel-container">
+
+                <div class="arrows">
+                    <a href="" class="prev">
+                        <i class="fa fa-angle-right fa-4x"></i>
+                    </a>
+                    <a href="" class="next">
+                        <i class="fa fa-angle-left fa-4x"></i>
+                    </a>
+                </div>
 
                 <div class="slide">
                     <h1>"john is an excellent designer, and we got our project done on time and on budget."</h1>
@@ -327,11 +333,14 @@
                         <img src="" alt="">
                         <span>jim walker</span>
                         <p>CEO of Genericorp</p>
-                        <i class="fa fa-star fa-3x"></i>
-                        <i class="fa fa-star fa-3x"></i>
-                        <i class="fa fa-star fa-3x"></i>
-                        <i class="fa fa-star fa-3x"></i>
-                        <i class="fa fa-star fa-3x"></i>
+                        <div class="stars">
+                            <i class="fa fa-star fa-3x"></i>
+                            <i class="fa fa-star fa-3x"></i>
+                            <i class="fa fa-star fa-3x"></i>
+                            <i class="fa fa-star fa-3x"></i>
+                            <i class="fa fa-star fa-3x"></i>
+                        </div>
+                        
                     </div>
                 </div>
 
@@ -343,11 +352,13 @@
                         <img src="" alt="">
                         <span>jim walker</span>
                         <p>CEO of Genericorp</p>
-                        <i class="fa fa-star fa-3x"></i>
-                        <i class="fa fa-star fa-3x"></i>
-                        <i class="fa fa-star fa-3x"></i>
-                        <i class="fa fa-star fa-3x"></i>
-                        <i class="fa fa-star fa-3x"></i>
+                        <div class="stars">
+                            <i class="fa fa-star fa-3x"></i>
+                            <i class="fa fa-star fa-3x"></i>
+                            <i class="fa fa-star fa-3x"></i>
+                            <i class="fa fa-star fa-3x"></i>
+                            <i class="fa fa-star fa-3x"></i>
+                        </div>
                     </div>
                 </div>
                 
@@ -355,10 +366,13 @@
         </section>
 
         <section class="newsletter">
-            <h1>Subscribe to our newsletter</h1>
+            <h1>Subscribe to our newsletter!</h1>
             <hr>
-            <input type="text">
-            <button>subscribe</button>
+            <div class="email-input">
+                <input type="text" placeholder="Email address...">
+                <button>subscribe</button>
+            </div>
+            
         </section>
 
         <section class="contact">
@@ -366,7 +380,7 @@
             <hr>
             <p>I'd love to hear about your next project! Send me a message and I will see if I can help.</p>
 
-            <form action="contact">
+            <form class='form' action="contact">
                 <label for="name">name</label>
                 <input type="text">
 

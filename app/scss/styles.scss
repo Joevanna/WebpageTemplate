@@ -43,15 +43,15 @@ hr {
 h1 { 
 
 	font-weight: 900;
-	font-size: 4vw;
-	color: $font-colour-light;
+	font-size: 6vw;
+	color: $font-colour;
 	/*font-size: 6rem;*/
 	text-transform: uppercase;
 	text-align: center;
 	}
 
 p { 
-	color: $font-colour-light;
+	color: $font-colour;
 	font-size: 2vw;
 	text-transform: capitalize;
 	text-align: center;
@@ -147,13 +147,13 @@ LANDING SECTION STYLING
 	background-position: center center;
 	display: flex;
 	flex-direction: column;
-	align-content: center;
+	justify-content: center;
 	align-items: center;
 	color: white;
 
 	img { 
-		margin-top: 150px;
-		height: 250px; 
+		margin-top: 130px;
+		width: 250px;
 	}
 
 	.titles {
@@ -163,6 +163,9 @@ LANDING SECTION STYLING
 	    align-items: center;
 	    height: 150px;
 	    margin-top: 20px;
+
+	    h1, p { color: $font-colour-light; }
+	    
 	}
 
 	i {
@@ -492,21 +495,46 @@ REVIEWS SECTION STYLING
 ****************************************/
 
 .review {
-	height: 70%;
+	height: 60%;
 	background-color: $background-gray;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
 	.carousel-container {
+		position: relative;
 		width: 60%;
-		height: 80%;
+		height: 50%;
+		margin: 0 auto;
 	}
+
+	.next,
+	.prev {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		color: white;
+	  	top: 50%;
+	  	width: 45px;
+		height: 90px;
+		background-color: $divider-colour;
+		text-decoration: none;
+		opacity: .6;
+	  	transform: translateY(-50%);
+	  	z-index: 5;
+	}
+
+	.next { left: -10%; }
+	.prev { right: -10%; }
 
 	.slide {
 		position: absolute;
 		height: 100%;
-		
+		width: 100%;
+
+		&:nth-of-type(2) {opacity: 0;}
+
 		h1 {
 			font-size: 2vw;
 		}
@@ -514,15 +542,78 @@ REVIEWS SECTION STYLING
 		p {
 			font-size: 1.4vw;
 		}
+
+		.caption { text-align: center; }
 	}
 }
 
+/****************************************
+
+NEWSLETTER SECTION STYLING
+
+****************************************/
 
 
+.newsletter {
+	height: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: $font-colour;
 
+	h1 { 
+		font-size: 2vw;
+		color: $font-colour-light;
+	}
 
+	.email-input {
+		width: 45%;
+		height: 40px;
+		display: flex;
 
+		button { 
+			padding: 0; 
+			background-color: $divider-colour;
+			border: none;
+			flex-grow: 1;
+		}
 
+		input { flex-grow: 5;}
+	}
+}
+
+/****************************************
+
+CONTACT SECTION STYLING
+
+****************************************/
+
+.contact {
+	height: 100vh;
+
+	h1 {
+		font-size: 2.5vw;
+	}
+
+	p {
+		font-size: 1.2vw;
+	}
+
+}
+
+.contact,
+.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	input {
+		border: none;
+		border-top: 1px solid $font-colour;
+	}
+}
 
 
 
