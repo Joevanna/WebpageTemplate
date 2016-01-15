@@ -1,0 +1,13 @@
+body, html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-items: space-between;
+	align-items: space-around;
+	color: white;
+}
