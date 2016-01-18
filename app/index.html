@@ -21,14 +21,14 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <header role="nav">
+        <header role="nav" class='nav'>
         	<img src="images/logo@2x.png" alt="logo" class="logo">
         	<ul class="sections-nav">
-        		<li>About</li>
-        		<li>Services</li>
-        		<li>Process</li>
-        		<li>Work</li>
-        		<li>Contact</li>
+        		<li><a href="#intro">About</a></li>
+        		<li><a href="#services"></a>Services</li>
+        		<li><a href="#process"></a>Process</li>
+        		<li><a href="#work"></a>Work</li>
+        		<li><a href="#contact"></a>Contact</li>
         	</ul>
         </header>
 
@@ -42,7 +42,7 @@
         	<i class="fa fa-angle-down fa-5x"></i>
         </section>
 
-        <section class="intro">
+        <section class="intro" id="intro">
             <img src="images/about.jpg" alt="">
             <div class="intro-copy">
                 <h1>hi, i'm john smith</h1>
@@ -53,7 +53,7 @@
             </div>
         </section>
 
-        <section class="skills">
+        <section class="skills" id="services">
             <h1 class="section-title">this is what I do</h1>
             <p>I provide web design, web development, photography, and graphic design services.</p>
             <hr>
@@ -88,7 +88,7 @@
             <button>let's find it</button>
         </section>
 
-        <section class="process">
+        <section class="process" id="process">
             <h1>my process</h1>
             <hr>
             <p>Here is an overview of how I approach each new project.</p>
@@ -210,12 +210,12 @@
             </div>
         </section>
 
-        <section class="portfolio">
+        <section class="portfolio" id="work">
             <h1>portfolio</h1>
             <hr>
             <p>Here are some other projects I have worked on</p>
 
-            <div class="catagories">
+            <div class="cataegories">
                 <a href="">all</a>
                 <a href="">identity</a>
                 <a href="">graphic</a>
@@ -380,7 +380,7 @@
             <hr>
             <p>I'd love to hear about your next project! Send me a message and I will see if I can help.</p>
 
-            <form class='form' action="contact">
+            <form class='form' action="contact" id="contact">
 
                 <span class="input-group">
                     <input class="input-field" type="text" />
@@ -404,8 +404,8 @@
                 </span>
 
                 <span class="input-group">
-                    <input class="input-field" type="textarea" />
-                    <label class="float-label" for="message">
+                    <input class="input-field text-message" type="textarea"/>
+                    <label class="float-label last" for="message">
                         <span class="label-content">Message</span>
                     </label>
                 </span>
@@ -417,30 +417,30 @@
         <section class="visit">
             <div class="addresses">
                 <div class="call">
-                    <h1>call</h1>
+                    <h3><i class="fa fa-phone"></i>call</h3>
                     <p>1223445</p>
                 </div>
-                <div class="call">
-                    <h1>call</h1>
-                    <p>1223445</p>
+                <div class="visitus">
+                    <h3><i class="fa fa-map-marker"></i>visit</h3>
+                    <p>3481 Melrose Place <br>Beverly Hills, CA 90210</p>
                 </div>
-                <div class="call">
-                    <h1>call</h1>
-                    <p>1223445</p>
+                <div class="mail">
+                    <h3><i class="fa fa-envelope"></i>email</h3>
+                    <p>mail@example.com</p>
                 </div>
             </div>
 
-            <div class="share">
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
+            <div class="share-icons">
+                <i class="fa fa-facebook fa-4x"></i>
+                <i class="fa fa-twitter fa-4x"></i>
+                <i class="fa fa-linkedin fa-4x"></i>
             </div>
-            <p class="copy">© 2015 Start Bootstrap Themes</p>
+
+            <span class="copy">© 2015 Start Bootstrap Themes</span>
         </section>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

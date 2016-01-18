@@ -73,12 +73,20 @@ header {
   justify-content: space-around;
   align-items: center;
   color: white;
-  background-color: black;
-  opacity: 0.6;
+  background-color: transparent;
   width: 100%;
-  height: 90px; }
+  height: 90px;
+  transition: all .3s ease-in-out; }
+  header.shrink {
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.6); }
+    header.shrink .sections-nav li {
+      font-size: 1.1vw; }
+    header.shrink .logo {
+      height: 50%; }
   header .logo {
-    height: 60%; }
+    height: 60%;
+    transition: all .3s ease-in-out; }
   header .sections-nav {
     display: flex;
     flex-direction: row;
@@ -92,8 +100,8 @@ header {
       color: white;
       transition: all .3s linear;
       cursor: pointer;
-      font-size: 1.3vw;
-      /*font-size: 1.6rem;*/ }
+      font-size: 1.5vw;
+      transition: all .3s ease-in-out; }
       header .sections-nav li:hover {
         color: #666666; }
     header .sections-nav .selected {
@@ -119,7 +127,6 @@ LANDING SECTION STYLING
   align-items: center;
   color: white; }
   .landing img {
-    margin-top: 130px;
     width: 250px; }
   .landing .titles {
     display: flex;
@@ -469,17 +476,31 @@ form {
     width: 100%;
     background: transparent;
     color: #AFB5BB;
-    font-size: 1.55em;
-    height: 60px;
+    font-size: 1.6vw;
+    height: 40px;
     border: none;
-    border-top: 1px solid lightgray; }
+    margin-bottom: 40px;
+    border-bottom: 1px solid lightgray;
+    outline: none; }
     form input:nth-of-type(4) {
       border-bottom: 1px solid lightgray; }
+    form input:focus ~ label {
+      top: -25px;
+      font-size: 1.8vw;
+      font-weight: bold;
+      color: lightcoral; }
+  form .text-message {
+    height: 105px; }
   form label {
     position: absolute;
     width: 100%;
+    font-size: 1.5vw;
+    top: 15px;
     text-align: left;
-    pointer-events: none; }
+    pointer-events: none;
+    transition: all .2s ease-out; }
+  form .last {
+    top: 75px; }
   form .label-content {
     transition: transform 0.3s; }
   form button {
@@ -487,3 +508,53 @@ form {
     border: 1px solid #333333;
     color: #333333;
     align-self: flex-start; }
+
+/****************************************
+
+CALL SECTION STYLING
+
+****************************************/
+.visit {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../images/bg-footer.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; }
+
+.addresses {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 200px; }
+  .addresses div {
+    width: 20%; }
+    .addresses div p,
+    .addresses div h3 {
+      color: #cccccc; }
+    .addresses div p {
+      font-size: 1.2vw; }
+    .addresses div h3 {
+      font-size: 1.3vw;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 10px; }
+      .addresses div h3 i {
+        padding-right: 5px; }
+
+.share-icons,
+.copy {
+  color: #cccccc; }
+
+.share-icons i {
+  padding: 0 20px; }
+
+.copy {
+  margin-bottom: 10px;
+  font-size: 1.5vw; }
