@@ -13,6 +13,7 @@ var gulp = require('gulp'),
 
 gulp.task('sass', function() {
 	return gulp.src('app/scss/**/*.scss')
+	.pipe(autoprefixer())
 	.pipe(sass())
 	.pipe(gulp.dest('app/css'))
 	.pipe(browserSync.reload({
@@ -32,7 +33,6 @@ gulp.task('useref', function(){
 
   return gulp.src('app/*.html')
     .pipe(useref())
-    .pipe(autoprefixer())
     .pipe(gulpIf('*.css', minifyCSS()))
     .pipe(gulpIf('*.js', uglify()))
     .pipe(gulp.dest('dist'));

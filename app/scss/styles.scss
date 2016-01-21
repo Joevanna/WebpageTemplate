@@ -43,7 +43,7 @@ hr {
 h1 { 
 
 	font-weight: 900;
-	font-size: 6vw;
+	font-size: 8rem;
 	color: $font-colour;
 	/*font-size: 6rem;*/
 	text-transform: uppercase;
@@ -52,7 +52,7 @@ h1 {
 
 p { 
 	color: $font-colour;
-	font-size: 2vw;
+	font-size: 3rem;
 	text-transform: capitalize;
 	text-align: center;
 	line-height: 1.5;
@@ -255,7 +255,7 @@ INTRO SECTION STYLING
 
 	.section-title {
 		font-size: 3vw;
-		padding-top: 150px;
+		padding-top: 10vw;
 	}
 
 	p {
@@ -273,17 +273,17 @@ INTRO SECTION STYLING
 		width: 25%;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: baseline;
 		align-items: center;
 		padding: 0 40px;
 
 		h1 {
-			font-size: 2.6rem;
+			font-size: 1.5vw;
 			margin-bottom: 15px;
 		}
 
 		i {
-			font-size: 6rem;
+			font-size: 4vw;
 			margin: 30px 0;
 		}
 	}
@@ -506,7 +506,100 @@ PORTFOLIO SECTION STYLING
 
 ****************************************/
 
-.portfolio { display: block;}
+.portfolio { 
+	margin: 60px auto;
+
+	h1 {
+		font-size: 3vw;
+	}
+
+	p {
+		font-size: 1.3vw;
+	}
+
+	.categories {
+		display: block;
+		width: 100%;
+		height: 80px;
+		text-align: center;
+		margin-top: 40px;
+
+		a {
+			color: $font-colour;
+			padding: 10px 20px;
+			font-size: 1vw;
+			border: 1px solid $font-colour;
+			text-decoration: none;
+			margin: 0 5px;
+		}
+
+		.active {
+		background-color: $divider-colour;
+		color: white;
+		border: 1px solid white;
+	}
+	}
+
+	.showcase {
+		width: 75%;
+		height: auto;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		li {
+			width: 32%;
+			height: 250px;
+			position: relative;
+			margin-bottom: 30px;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+				transition: all .3s ease-out;
+				-webkit-filter: grayscale(0%);
+			}
+
+			.content {
+				
+				height: 25%;
+				background-color: $divider-colour;
+				color: white;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				position: absolute;
+				bottom: -25%;
+				width: 100%;
+				transition: all .3s ease-out;
+
+				h2 {
+					font-size: 1vw;
+				}
+
+				p {
+					font-size: 0.8vw;
+					color: white;
+				}
+			}
+
+			&:hover {
+				img {
+					transform: scale(1.2);
+					transform-origin: 50% 50%;
+					-webkit-filter: grayscale(100%);			
+				}
+
+				.content {
+					bottom: 0;
+				}
+			}
+		}
+	}
+}
 
 
 /****************************************

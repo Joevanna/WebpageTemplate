@@ -29,7 +29,7 @@ hr {
 
 h1 {
   font-weight: 900;
-  font-size: 6vw;
+  font-size: 8rem;
   color: #333333;
   /*font-size: 6rem;*/
   text-transform: uppercase;
@@ -37,12 +37,14 @@ h1 {
 
 p {
   color: #333333;
-  font-size: 2vw;
+  font-size: 3rem;
   text-transform: capitalize;
   text-align: center;
   line-height: 1.5; }
 
 button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   padding: 20px 25px;
   border-radius: 0;
@@ -54,6 +56,7 @@ button {
   text-transform: uppercase;
   color: #e6e6e6;
   font-weight: 900;
+  -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out; }
   button:hover {
     color: lightcoral;
@@ -68,14 +71,27 @@ header {
   z-index: 10;
   position: fixed;
   top: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   color: white;
   background-color: transparent;
   width: 100%;
   height: 90px;
+  -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out; }
   header.shrink {
     height: 80px;
@@ -86,20 +102,36 @@ header {
       height: 50%; }
   header .logo {
     height: 60%;
+    -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out; }
   header .sections-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 30%;
     height: 100%;
     list-style: none;
+    -webkit-transition: all .3s linear;
     transition: all .3s linear; }
     header .sections-nav li {
+      -webkit-transition: all .3s linear;
       transition: all .3s linear;
       cursor: pointer;
       font-size: 1.4vw;
+      -webkit-transition: all .3s ease-in-out;
       transition: all .3s ease-in-out; }
       header .sections-nav li a {
         color: #cccccc;
@@ -128,17 +160,43 @@ LANDING SECTION STYLING
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   color: white; }
   .landing img {
     width: 250px; }
   .landing .titles {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 150px;
     margin-top: 20px; }
@@ -149,8 +207,17 @@ LANDING SECTION STYLING
     height: 40px;
     border-radius: 50%;
     border: 2px solid white;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     position: absolute;
     bottom: 20px;
@@ -165,17 +232,36 @@ INTRO SECTION STYLING
 
 ****************************************/
 .intro {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   fiex-direction: column;
   justify-items: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: white;
   padding: 80px; }
 
 .intro-copy {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 40px; }
   .intro-copy h1 {
@@ -198,27 +284,47 @@ INTRO SECTION STYLING
     padding-bottom: 20px; }
   .skills .section-title {
     font-size: 3vw;
-    padding-top: 150px; }
+    padding-top: 10vw; }
   .skills p {
     font-size: 1.2vw; }
 
 .skills-container {
   width: 100%;
   height: 60%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row; }
   .skills-container div {
     width: 25%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
-    justify-content: center;
+    -webkit-box-pack: baseline;
+    -webkit-justify-content: baseline;
+    -ms-flex-pack: baseline;
+    justify-content: baseline;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 0 40px; }
     .skills-container div h1 {
-      font-size: 2.6rem;
+      font-size: 1.5vw;
       margin-bottom: 15px; }
     .skills-container div i {
-      font-size: 6rem;
+      font-size: 4vw;
       margin: 30px 0; }
 
 /****************************************
@@ -227,9 +333,22 @@ QUOTE SECTION STYLING
 
 ****************************************/
 .quote {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   height: 100vh;
   background-image: url("../images/bg-aside.jpg");
@@ -252,29 +371,64 @@ PROCESS SECTION STYLING
 ****************************************/
 .process {
   height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center; }
 
 .process-wrapper {
   width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
   margin-top: 60px; }
   .process-wrapper .plan,
   .process-wrapper .create,
   .process-wrapper .launch {
     width: 33%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+    -ms-flex-align: baseline;
     align-items: baseline;
     padding: 40px; }
     .process-wrapper .plan i,
     .process-wrapper .create i,
     .process-wrapper .launch i {
       font-size: 3.5rem;
+      -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
       align-self: flex-start;
       padding: 15px;
       border: 2px solid black;
@@ -297,8 +451,17 @@ CASE STUDIES INTRO SECTION STYLING
 .case-studies-intro {
   height: 45vh;
   background-color: #f5f5f5;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center; }
   .case-studies-intro h1 {
     font-size: 3.8vw; }
@@ -317,8 +480,17 @@ CASE STUDIES SECTION STYLING
     position: relative; }
     .case-studies .carousel .next,
     .case-studies .carousel .prev {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
       justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
       align-items: center;
       position: absolute;
       color: white;
@@ -327,6 +499,7 @@ CASE STUDIES SECTION STYLING
       height: 90px;
       background-color: lightcoral;
       opacity: .6;
+      -webkit-transform: translateY(-50%);
       transform: translateY(-50%);
       z-index: 5; }
     .case-studies .carousel .next {
@@ -336,9 +509,22 @@ CASE STUDIES SECTION STYLING
   .case-studies .slide {
     position: absolute;
     height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     color: #f2f2f2; }
     .case-studies .slide h1 {
@@ -377,7 +563,98 @@ PORTFOLIO SECTION STYLING
 
 ****************************************/
 .portfolio {
-  display: block; }
+  margin: 60px auto; }
+  .portfolio h1 {
+    font-size: 3vw; }
+  .portfolio p {
+    font-size: 1.3vw; }
+  .portfolio .categories {
+    display: block;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    margin-top: 40px; }
+    .portfolio .categories a {
+      color: #333333;
+      padding: 10px 20px;
+      font-size: 1vw;
+      border: 1px solid #333333;
+      text-decoration: none;
+      margin: 0 5px; }
+    .portfolio .categories .active {
+      background-color: lightcoral;
+      color: white;
+      border: 1px solid white; }
+  .portfolio .showcase {
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .portfolio .showcase li {
+      width: 32%;
+      height: 250px;
+      position: relative;
+      margin-bottom: 30px;
+      overflow: hidden; }
+      .portfolio .showcase li img {
+        width: 100%;
+        -webkit-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+        -webkit-filter: grayscale(0%); }
+      .portfolio .showcase li .content {
+        height: 25%;
+        background-color: lightcoral;
+        color: white;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        position: absolute;
+        bottom: -25%;
+        width: 100%;
+        -webkit-transition: all .3s ease-out;
+        transition: all .3s ease-out; }
+        .portfolio .showcase li .content h2 {
+          font-size: 1vw; }
+        .portfolio .showcase li .content p {
+          font-size: 0.8vw;
+          color: white; }
+      .portfolio .showcase li:hover img {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-filter: grayscale(100%); }
+      .portfolio .showcase li:hover .content {
+        bottom: 0; }
 
 /****************************************
 
@@ -387,8 +664,17 @@ REVIEWS SECTION STYLING
 .review {
   height: 60%;
   background-color: #f5f5f5;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center; }
   .review .carousel-container {
     position: relative;
@@ -397,8 +683,17 @@ REVIEWS SECTION STYLING
     margin: 0 auto; }
   .review .next,
   .review .prev {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     position: absolute;
     color: white;
@@ -408,6 +703,7 @@ REVIEWS SECTION STYLING
     background-color: lightcoral;
     text-decoration: none;
     opacity: .6;
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     z-index: 5; }
   .review .next {
@@ -434,9 +730,22 @@ NEWSLETTER SECTION STYLING
 ****************************************/
 .newsletter {
   height: 40%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #333333; }
   .newsletter h1 {
@@ -445,13 +754,22 @@ NEWSLETTER SECTION STYLING
   .newsletter .email-input {
     width: 45%;
     height: 40px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex; }
     .newsletter .email-input button {
       padding: 0;
       background-color: lightcoral;
       border: none;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
       flex-grow: 1; }
     .newsletter .email-input input {
+      -webkit-box-flex: 5;
+      -webkit-flex-grow: 5;
+      -ms-flex-positive: 5;
       flex-grow: 5; }
 
 /****************************************
@@ -468,9 +786,22 @@ CONTACT SECTION STYLING
 
 .contact,
 .form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center; }
 
 form {
@@ -505,15 +836,21 @@ form {
     top: 15px;
     text-align: left;
     pointer-events: none;
+    -webkit-transition: all .2s ease-out;
     transition: all .2s ease-out; }
   form .last {
     top: 75px; }
   form .label-content {
-    transition: transform 0.3s; }
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s; }
   form button {
     padding: 15px 20px;
     border: 1px solid #333333;
     color: #333333;
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
     align-self: flex-start; }
 
 /****************************************
@@ -523,9 +860,22 @@ CALL SECTION STYLING
 ****************************************/
 .visit {
   height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   background-image: url("../images/bg-footer.jpg");
   background-repeat: no-repeat;
@@ -533,10 +883,23 @@ CALL SECTION STYLING
   background-attachment: fixed; }
 
 .addresses {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
   width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
   align-items: baseline;
   margin-top: 200px; }
   .addresses div {
